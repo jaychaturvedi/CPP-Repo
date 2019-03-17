@@ -13,8 +13,10 @@ int mj=-1;
 cout <<"Enter n : ";
 cin >> n;
 cout << " Enter n elements of array : ";
+cin >> arr[0];
 cur[0] = arr[0];
 for(int i=1;i<n;i++){
+    cin >> arr[i];
     cur[i] = cur[i-1]+arr[i];
 }
 for (int i=0;i<n;i++){
